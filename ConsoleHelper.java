@@ -24,7 +24,7 @@ public class ConsoleHelper {
     // просит пользователя выбрать блюдо и добавляет его в список
     public static List<Dish> getAllDishesForOrder() throws IOException {
         ConsoleHelper.writeMessage(Dish.allDishesToString());
-        ConsoleHelper.writeMessage("Please, choose dishes and then type 'exit':");
+        ConsoleHelper.writeMessage("Choose dishes and then type 'exit':");
         List<Dish> listOfDishesForOrder = new ArrayList<>();
 
         while (true) {

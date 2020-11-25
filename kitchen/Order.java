@@ -18,11 +18,16 @@ public class Order {
     }
 
     public int getTotalCookingTime() {
+        // время в минутах
         return dishes.stream().mapToInt(Dish::getDuration).sum();
     }
 
     public boolean isEmpty() {
         return dishes.isEmpty();
+    }
+
+    public List<Dish> getDishes() {
+        return dishes;
     }
 
     @Override
